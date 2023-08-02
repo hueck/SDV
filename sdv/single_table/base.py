@@ -471,7 +471,7 @@ class BaseSynthesizer:
         self._fit(processed_data)
         self._fitted = True
         self._fitted_date = datetime.datetime.today().strftime('%Y-%m-%d')
-        self._fitted_sdv_version = pkg_resources.get_distribution('sdv').version
+        # self._fitted_sdv_version = pkg_resources.get_distribution('sdv').version
 
     def fit(self, data):
         """Fit this model to the original data.
